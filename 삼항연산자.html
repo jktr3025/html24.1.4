@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="java">
+        function getFee(member){
+            return member ? "$2" : "$10"
+        }
+
+        console.log(getFee(true))
+        //getFee가 진실일 때
+        console.log(getFee(false))
+        //getFee가 거짓일 때
+
+        console.log(getFee(null))
+        // null : 비어있음
+    </script>
+</head>
+<body>
+    삼항 연산자는 if를 한 줄로 쓴 것과 다름 없음
+    if(n==5){
+        n=0
+    }else{
+        n++
+    }
+
+    삼항연산자
+    조건문 ? 때 실행문  : 거짓일 떄 실행문
+    n==5 ? n=0 : n++
+</body>
+</html>
